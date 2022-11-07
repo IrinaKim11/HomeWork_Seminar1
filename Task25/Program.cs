@@ -6,8 +6,8 @@ Console.WriteLine("Введите первое число: ");
 int numberA = int.Parse (Console.ReadLine() ?? "0");
 Console.WriteLine("Введите натуральную степень: ");
 int numberB = int.Parse (Console.ReadLine() ?? "0");
-int deg = GetDegNums(numberA);
-Console.Write($"Число {numberA} в степени {numberB} = {deg}");
+int result = GetDegNums(numberA);
+Console.Write($"Число {numberA} в степени {numberB} = {result}");
 
 int GetDegNums(int numberA)
 {
