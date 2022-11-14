@@ -21,7 +21,7 @@ void PrintArray(int[] arr)
 
 
 
-int[] array = GetArray(7,1,10);
+int[] array = GetArray(7,0,10);
 PrintArray(array);
 Console.WriteLine();
 
@@ -33,7 +33,5 @@ for(int i = 0; i<array.Length;i++)
         if(array[i]< min) min = array[i];
         
     }
-    Console.WriteLine(max-min);
+    Console.WriteLine($"Разница между максимальным и минимальным элементами = {max-min}" );
 
-
-// GetDiff(array);
