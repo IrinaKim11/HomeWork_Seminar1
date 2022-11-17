@@ -4,13 +4,19 @@
 
 Console.Write("Введите числа через пробел: ");
 int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-int count = 0;
+Console.WriteLine($"Количество чисел больше '0' = {GetCount(arr)}");
 
-for(int i = 0; i<arr.Length; i++)
+int GetCount(int[] arr)
 {
-    if(arr[i]>0)
+    int count = 0;
+
+    for (int i = 0; i < arr.Length; i++)
     {
-        count++;
+        if (arr[i] > 0)
+        {
+            count++;
+        }
     }
+    return count;
 }
-Console.WriteLine(count);
+
